@@ -1,12 +1,3 @@
-SELECT 
-    DATEPART(HOUR, bet_date) AS bet_hour,
-    COUNT(*) AS total_bets,
-    SUM(stake) AS total_stake
-FROM bets
-GROUP BY DATEPART(HOUR, bet_date)
-ORDER BY total_stake DESC;
-
-
 WITH player_activity AS (
     SELECT
         player_id,
