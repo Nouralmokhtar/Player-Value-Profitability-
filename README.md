@@ -1,20 +1,34 @@
-# Player-Value-Profitability-
-(LTV mindset)
+# iGaming Analytics Project
 
-## Business Question 1: Player Value & Profitability
+ Business Context
+This project simulates a real world iGaming analytics environment, focusing on player behavior, profitability, and business decision-making.
 
-Objective:
-Identify the most valuable players based on betting behavior, deposits, and real profitability.
+ Data Model
+The dataset represents players, bets, deposits, withdrawals, games, and countries, aggregated through SQL Server queries to support analytical use cases.
+
+## Use Case 1: Player Value & Profitability
+Business Question:
+Who are our most valuable players, and what explains their profitability?
 
 Approach:
-I aggregated player-level betting, deposit, and withdrawal data to calculate GGR, Net Cash, and engagement metrics.
+Player-level aggregation combining betting behavior, deposits, withdrawals, and engagement metrics.
 
-Key Insights:
-- A small subset of players generates the majority of GGR
-- High VIP level does not always equal high profitability
-- Some players show risky patterns (high deposit, low play)
+Key Metrics:
+- Total Stake
+- GGR (Stake − Win)
+- Net Cash
+- Active Days
+- VIP Level
 
-Business Recommendation:
-- Revisit VIP segmentation logic
-- Target high-GGR low-VIP players with tailored offers
-- Monitor low-activity high-deposit players for churn risk
+Outcome:  
+Identified high-value players, profitability concentration, and early risk signals related to retention and bonus efficiency.
+
+ Tools Used
+- SQL Server
+- Python (pandas, matplotlib)
+- VS Code
+- GitHub
+
+ Status
+- Use Case 1: Completed
+- Use Case 2: In progress
